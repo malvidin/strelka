@@ -1,5 +1,6 @@
 beautifulsoup4==4.7.1
 boltons==18.0.1
+esprima==4.0.1
 grpcio==1.19.0
 grpcio-tools==1.19.0  # required for compiling protobuf, not needed afterward
 html5lib==1.0.1
@@ -15,7 +16,6 @@ pdfminer.six==20181108
 pefile==2018.8.8
 pgpdump3==1.5.2
 pyelftools==0.25
-pyjsparser==2.5.2
 pylzma==0.5.0
 pygments==2.3.1
 git+https://github.com/jshlbrd/pyopenssl.git

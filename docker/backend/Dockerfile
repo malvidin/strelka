@@ -37,7 +37,7 @@ RUN apt-get -qq update && \
     upx \
     jq && \
 # Install Python packages
-    pip3 install -r /usr/local/src/strelka/docker/strelka-backend/requirements.txt && \
+    pip3 install -r /usr/local/src/strelka/docker/backend/requirements.txt && \
 # Compile protobuf
     cd /usr/local/src/strelka/ && \
     python3 -m grpc_tools.protoc -I. --python_out=. --grpc_python_out=. strelka/proto/strelka.proto && \
@@ -59,7 +59,7 @@ RUN apt-get -qq update && \
     python3 setup.py install && \
 # Install Strelka
     cd /usr/local/src/strelka/ && \
-    mv docker/strelka-backend/setup.py /usr/local/src/strelka/ && \
+    mv docker/backend/setup.py /usr/local/src/strelka/ && \
     python3 setup.py -q build && \
     python3 setup.py -q install && \
 # Remove build packages
